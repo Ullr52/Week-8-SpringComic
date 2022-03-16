@@ -12,21 +12,20 @@ import dmacc.beans.ComicInformation;
  */
 public class BeanConfiguration {
 	
-	@Bean
-	public Comic comic() {
-	Comic bean = new Comic("X-Men");
-	bean.setIssuNum(11);
-	return bean;
-	}
+	/*
+	 * @Bean public Comic comic() { Comic bean = new Comic("X-Men");
+	 * bean.setIssuNum(11); return bean; }
+	 */
 	
-	@Bean
-	public ComicInformation comicInformation() {
-		
-		ComicInformation bean = new ComicInformation(1976, "New York", "NY");
-		return bean;
-			
-		
-		
-	}
+	/*
+	 * @Bean public ComicInformation comicInformation() {
+	 * 
+	 * ComicInformation bean = new ComicInformation(1976, "New York", "NY"); return
+	 * bean;
+	 * 
+	 * 
+	 * 
+	 * }
+	 */
 
 }

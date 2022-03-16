@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert New Comic Pull List</title>
+</head>
+<body>
+<form th:object="${newComic}" th:action="@{/update/{id}(id=${newComic.id})}" method='POST'>
+Pull List: <input name="list" size="20" th:field="*{list}"> <br />
+Comic Title: <input name="comicTitle" size="20" th:field="*{comicTitle}"><br />
+Issue Number: <input name="issuNum" size="20" th:field="*{issuNum}"><br />
+Year Published: <input name="comicInformation.yearPub" size="20" th:field="*{comicInformation.yearPub}" ><br />
+City Published: <input name="comicInformation.cityPub" size="20" th:field="*{comicInformation.cityPub}"><br />
+State Published:<input name="comicInformation.statePub" size="20" th:field="*{comicInformation.statePub}"><br />
+<input name="submit" type="submit" value="submit" />
+</form>
+<a href="../viewAll">View all Pull Lists</a>
+</body>
+</html>
